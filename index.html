@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas of Europe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container-fluid mt-3">
+        <div class="container p-5 mt-3 bg-light text-dark rounded">
+            <h1>The Nickname Atlas of South America</h1><br>
+            <p>Every nation in this region carries a name through geography, history, and myth. Click a country below to uncover the title it has been given.</p>
+            <select id="country" class="form-select mb-3">
+            <option>choose a country</option>
+            <option value="the land of pasta and pizza">Italy</option>
+            <option value="the land of croissants and the Eiffel Tower">France</option>
+            <option value="the land of bratwurst and beer">Germany</option>
+            <option value="the land of fiestas and flamenco">Spain</option>
+            <option value="the land of fado and custard tarts">Portugal</option>
+            <option value="the land of windmills and tulips">Netherlands</option>
+            <option value="the land of chocolate and watches">Switzerland</option>
+            <option value="the land of gods and ancient ruins">Greece</option>
+            <option value="the land of fjords and the northern lights">Norway</option>
+            <option value="the land of ABBA and meatballs">Sweden</option>
+            <option value="the land of green hills and Guinness">Ireland</option>
+            <option value="the land of castles and afternoon tea">United Kingdom</option>
+            </select>
+            <button class="btn btn-primary" py-click="search_nickname">Click!!</button>
+            <div id="display" class="mt-4" style="font-size: 24px;"></div>
+        </div>
+    </div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
